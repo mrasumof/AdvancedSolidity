@@ -6,4 +6,5 @@ The objective of this homework is to develop and deploy 3 smart contracts. Each 
 The objective of this smart contract is to split the value deposited in the contract among the three wallets selected during contract deployment time.
 How it works:
 - At deployment time, we need to provide 3 wallet addresses. In our case I am picking the following 3 addresses from Ganache:
+
 ![pic 1](https://github.com/mrasumof/AdvancedSolidity/blob/main/Images/Picture1.gif?raw=true)
