@@ -86,7 +86,7 @@ Then in the deployed contract, click “deposit”:
 
 Authorize the payment of the transaction in the wallet:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![pic 15](https://github.com/mrasumof/AdvancedSolidity/blob/main/Images/Picture15.gif?raw=true)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![pic 16](https://github.com/mrasumof/AdvancedSolidity/blob/main/Images/Picture16.gif?raw=true)
 
 
 Once the transaction is confirmed, means that the execution of the contract was completed.
@@ -97,6 +97,6 @@ If we look the balance of those 3 accounts used for deploying the smart contract
 25 ETH the second wallet
 15 ETH the third wallet
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![pic 16](https://github.com/mrasumof/AdvancedSolidity/blob/main/Images/Picture16.gif?raw=true)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![pic 17](https://github.com/mrasumof/AdvancedSolidity/blob/main/Images/Picture17.gif?raw=true)
 
 
