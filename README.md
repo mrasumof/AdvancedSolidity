@@ -7,7 +7,7 @@ The objective of this smart contract is to split the value deposited in the cont
 How it works:
 - At deployment time, we need to provide 3 wallet addresses. In our case I am picking the following 3 addresses from Ganache:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![pic 1](https://github.com/mrasumof/AdvancedSolidity/blob/main/Images/Picture1.gif?raw=true)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;![pic 1](https://github.com/mrasumof/AdvancedSolidity/blob/main/Images/Picture1.gif?raw=true)
 
 The initial balance for these 3 wallets is 104 ETH. We will use the ending balance to demonstrate that a deposit had been made into the contract and moved to the accounts as the smart contract is programmed for.
 
