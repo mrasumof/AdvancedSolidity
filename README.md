@@ -3,6 +3,7 @@
 The objective of this homework is to develop and deploy 3 smart contracts. Each of them have a different purpose and I will explain each in detail below.
 
 ### 1.	Associate Profit Splitter (Source Code: “AssociateProfitSplitter.sol”)
+
 The objective of this smart contract is to split the value deposited in the contract among the three wallets selected during contract deployment time.
 
 How it works:
@@ -99,4 +100,59 @@ If we look the balance of those 3 accounts used for deploying the smart contract
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![pic 17](https://github.com/mrasumof/AdvancedSolidity/blob/main/Images/Picture17.gif?raw=true)
 
+Wallet ending in f86e: initial balance of 112 ETH + 60 ETH = 172 ETH
+Wallet ending in 1Ca8: initial balance of 112 ETH + 25 ETH = 137 ETH
+Wallet ending in 75AC: initial balance of 112 ETH + 15 ETH = 127 ETH
 
+
+### 3.	Deferred Equity Plan (Source Code: “DeferredEquityPlan.sol”)
+
+The objective of this smart contract is to distribute 1000 shares every year to the beneficiary of the smart contract
+
+How it works:
+
+In this case, at deployment time we need to provide only 1 wallet address, the one of the person that will be beneficiary of this smart contract. We will use address 0xAE5d9aDDdcF93D5947EEC2De6F42684049d411DC, although this smart contract do not produce any change in the balance of the wallet, only transfers a number of shares to the account.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![pic 18](https://github.com/mrasumof/AdvancedSolidity/blob/main/Images/Picture18.gif?raw=true)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![pic 19](https://github.com/mrasumof/AdvancedSolidity/blob/main/Images/Picture19.gif?raw=true)
+
+
+Proof of Contract Deployment
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![pic 20](https://github.com/mrasumof/AdvancedSolidity/blob/main/Images/Picture20.gif?raw=true)
+
+
+Contract deployed at: 0xAcCa360C20c72A4Ad66c3F1663f894a3EB8AaE83
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![pic 21](https://github.com/mrasumof/AdvancedSolidity/blob/main/Images/Picture21.gif?raw=true)
+
+
+Now we will proceed to the distribution. We need to make sure that the “value” field in remix is set to 0 and then click on distribute.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![pic 22](https://github.com/mrasumof/AdvancedSolidity/blob/main/Images/Picture22.gif?raw=true)
+
+
+Distribution Executed:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![pic 23](https://github.com/mrasumof/AdvancedSolidity/blob/main/Images/Picture23.gif?raw=true)
+
+
+As this is a yearly distribution, the contract has a feature that does not allow for it to be executed more than once a year. So, when we execute it again, we obtain an error:!
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![pic 24](https://github.com/mrasumof/AdvancedSolidity/blob/main/Images/Picture24.gif?raw=true)
+
+
+We included a feature that allows us to bypass this limitation so we can test the functionality. In order to do so, we created the “fastforward” functionality which simulates moving in time 400 days in advance so we can re-run the distribution.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![pic 25](https://github.com/mrasumof/AdvancedSolidity/blob/main/Images/Picture25.gif?raw=true)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![pic 26](https://github.com/mrasumof/AdvancedSolidity/blob/main/Images/Picture26.gif?raw=true)
+
+
+Then we can distribute again:
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![pic 27](https://github.com/mrasumof/AdvancedSolidity/blob/main/Images/Picture27.gif?raw=true)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![pic 28](https://github.com/mrasumof/AdvancedSolidity/blob/main/Images/Picture28.gif?raw=true)
